@@ -1,6 +1,7 @@
 {
     "horror": [
         {
+            "id": 1,
             "title": "It (2017)",
             "duration-in-hours": "2.5",
             "cover": "https://m.media-amazon.com/images/M/MV5BZDVkZmI0YzAtNzdjYi00ZjhhLWE1ODEtMWMzMWMzNDA0NmQ4XkEyXkFqcGdeQXVyNzYzODM3Mzg@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
@@ -20,6 +21,7 @@
             ]
         },
         {
+            "id": 2,
             "title": "Us",
             "duration-in-hours": "2",
             "cover": "https://m.media-amazon.com/images/M/MV5BZTliNWJhM2YtNDc1MC00YTk1LWE2MGYtZmE4M2Y5ODdlNzQzXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_SY1000_CR0,0,631,1000_AL_.jpg",
@@ -41,6 +43,7 @@
     ],
     "comedy": [
         {
+            "id": 1,
             "title": "Jumanji (2017)",
             "duration-in-hours": "2",
             "cover": "https://m.media-amazon.com/images/M/MV5BODQ0NDhjYWItYTMxZi00NTk2LWIzNDEtOWZiYWYxZjc2MTgxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
@@ -62,6 +65,7 @@
     ],
     "action": [
         {
+            "id": 1,
             "title": "The Dark Knight",
             "duration-in-hours": "2.5",
             "cover": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
