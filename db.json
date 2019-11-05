@@ -1,88 +1,112 @@
 {
-    "horror": [
+  "horror": [
+    {
+      "id": 1,
+      "title": "It (2017)",
+      "duration-in-hours": "2.5",
+      "cover": "https://m.media-amazon.com/images/M/MV5BZDVkZmI0YzAtNzdjYi00ZjhhLWE1ODEtMWMzMWMzNDA0NmQ4XkEyXkFqcGdeQXVyNzYzODM3Mzg@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
+      "cast": [
         {
-            "id": 1,
-            "title": "It (2017)",
-            "duration-in-hours": "2.5",
-            "cover": "https://m.media-amazon.com/images/M/MV5BZDVkZmI0YzAtNzdjYi00ZjhhLWE1ODEtMWMzMWMzNDA0NmQ4XkEyXkFqcGdeQXVyNzYzODM3Mzg@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
-            "cast": [
-                {
-                    "name": "Bill Skarsgard",
-                    "character": "Pennywise"
-                },
-                {
-                    "name": "Jaeden Martell",
-                    "character": "Bill Denbrough"
-                },
-                {
-                    "name": "Finn Wolfhard",
-                    "character": "Richie Tozier"
-                }
-            ]
+          "name": "Bill Skarsgard",
+          "character": "Pennywise"
         },
         {
-            "id": 2,
-            "title": "Us",
-            "duration-in-hours": "2",
-            "cover": "https://m.media-amazon.com/images/M/MV5BZTliNWJhM2YtNDc1MC00YTk1LWE2MGYtZmE4M2Y5ODdlNzQzXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_SY1000_CR0,0,631,1000_AL_.jpg",
-            "cast": [
-                {
-                    "name": "Lupita Nyong'o",
-                    "character": "Adelaide Wilson"
-                },
-                {
-                    "name": "Winston Duke",
-                    "character": "Gabe Wilson"
-                },
-                {
-                    "name": "Elisabeth Moss",
-                    "character": "Kitty Tyler"
-                }
-            ]
-        }
-    ],
-    "comedy": [
+          "name": "Jaeden Martell",
+          "character": "Bill Denbrough"
+        },
         {
-            "id": 1,
-            "title": "Jumanji (2017)",
-            "duration-in-hours": "2",
-            "cover": "https://m.media-amazon.com/images/M/MV5BODQ0NDhjYWItYTMxZi00NTk2LWIzNDEtOWZiYWYxZjc2MTgxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
-            "cast": [
-                {
-                    "name": "Dwayne Johnson",
-                    "character": "Spencer"
-                },
-                {
-                    "name": "Karen Gillan",
-                    "character": "Martha"
-                },
-                {
-                    "name": "Kevin Hart",
-                    "character": "Fridge"
-                }
-            ]
+          "name": "Finn Wolfhard",
+          "character": "Richie Tozier"
         }
-    ],
-    "action": [
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Us",
+      "duration-in-hours": "2",
+      "cover": "https://m.media-amazon.com/images/M/MV5BZTliNWJhM2YtNDc1MC00YTk1LWE2MGYtZmE4M2Y5ODdlNzQzXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_SY1000_CR0,0,631,1000_AL_.jpg",
+      "cast": [
         {
-            "id": 1,
-            "title": "The Dark Knight",
-            "duration-in-hours": "2.5",
-            "cover": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
-            "cast": [
-                {
-                    "name": "Christian Bale",
-                    "character": "Bruce Wayne"
-                },
-                {
-                    "name": "Heath Ledger",
-                    "character": "Joker"
-                },
-                {
-                    "name": "Aaron Eckhart",
-                    "character": "Harvey Dent"
-                }
-            ]
+          "name": "Lupita Nyong'o",
+          "character": "Adelaide Wilson"
+        },
+        {
+          "name": "Winston Duke",
+          "character": "Gabe Wilson"
+        },
+        {
+          "name": "Elisabeth Moss",
+          "character": "Kitty Tyler"
         }
-    ]
+      ]
+    }
+  ],
+  "comedy": [
+    {
+      "id": 1,
+      "title": "Jumanji (2017)",
+      "duration-in-hours": "2",
+      "cover": "https://m.media-amazon.com/images/M/MV5BODQ0NDhjYWItYTMxZi00NTk2LWIzNDEtOWZiYWYxZjc2MTgxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "cast": [
+        {
+          "name": "Dwayne Johnson",
+          "character": "Spencer"
+        },
+        {
+          "name": "Karen Gillan",
+          "character": "Martha"
+        },
+        {
+          "name": "Kevin Hart",
+          "character": "Fridge"
+        }
+      ]
+    },
+    {
+      "title": "Superbad",
+      "duration-in-hours": "2",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMTc0NjIyMjA2OF5BMl5BanBnXkFtZTcwMzIxNDE1MQ@@._V1_.jpg",
+      "cast": [
+        {
+          "name": "[object HTMLInputElement]",
+          "character": "[object HTMLInputElement]"
+        }
+      ],
+      "id": 2
+    }
+  ],
+  "action": [
+    {
+      "id": 1,
+      "title": "The Dark Knight",
+      "duration-in-hours": "2.5",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+      "cast": [
+        {
+          "name": "Christian Bale",
+          "character": "Bruce Wayne"
+        },
+        {
+          "name": "Heath Ledger",
+          "character": "Joker"
+        },
+        {
+          "name": "Aaron Eckhart",
+          "character": "Harvey Dent"
+        }
+      ]
+    },
+    {
+      "title": "Terminator: Dark Fate",
+      "duration-in-hours": "2",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNzhlYjE5MjMtZDJmYy00MGZmLTgwN2MtZGM0NTk2ZTczNmU5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX640_CR0,0,640,999_AL_.jpg",
+      "cast": [
+        {
+          "name": "[object HTMLInputElement]",
+          "character": "[object HTMLInputElement]"
+        }
+      ],
+      "id": 2
+    }
+  ]
 }
