@@ -9,7 +9,7 @@
 
 ## Preface
 
-You have a `db.json` with a list of movies that can be found at `http://localhost:4000/movies`. Run your `db.json` and complete the deliverables below
+You have a `db.json` with a list of movies that can be found at `http://localhost:4000/horror`, `http://localhost:4000/comedy`, and `http://localhost:4000/action`. Run your `db.json` and complete the deliverables below
 
 ## Deliverables
 
