@@ -39,6 +39,22 @@
           "character": "Kitty Tyler"
         }
       ]
+    },
+    {
+      "title": "Doctor Sleep",
+      "duration-in-hours": "2.5",
+      "cover": "https://m.media-amazon.com/images/M/MV5BYmY3NGJlYTItYmQ4OS00ZTEwLWIzODItMjMzNWU2MDE0NjZhXkEyXkFqcGdeQXVyMzQzMDA3MTI@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+      "cast": [
+        {
+          "name": "Rebecca Ferguson",
+          "character": "Rose the Hat"
+        },
+        {
+          "name": "Ewan McGregor",
+          "character": "Danny Torrance"
+        }
+      ],
+      "id": 3
     }
   ],
   "comedy": [

@@ -238,35 +238,61 @@ formButton.addEventListener("click", function (e) {
     //now that the form is added to my DOM I can grab it and add an event listener to it
     form.addEventListener("submit", function (e) {
         e.preventDefault()
-        console.log(e.target.querySelectorAll("input[data-type='member name']"))
-        let submittedForm = e.target
-        let newMovie = {
-            title: `${submittedForm.title.value}`,
-            "duration-in-hours": `${submittedForm.duration.value}`,
-            cover: `${submittedForm.cover.value}`,
-            cast: [
-                {
-                    name: `${submittedForm["cast-name"]}`,
-                    character: `${submittedForm["cast-char"]}`
+        let castArray = []
+        let newMovie
+        //if the form has an iterations key in it's dataset, add the values from the original inputs into the castArray, then read how many iterations there are, find the inputs associated with each iteration, create cast member objects with each input and push those into the castArray.
+        if (e.target.dataset.iterations) {
+            castArray.push({ name: e.target["cast-name"].value, character: e.target["cast-char"].value })
+            for (let i = 1; i < parseInt(e.target.dataset.iterations) + 1; i++) {
+                let name = e.target.querySelector(`div[data-num="${i}"]`).firstElementChild.value
+                let character = e.target.querySelector(`div[data-num="${i}"]`).lastElementChild.value
+                castArray.push({ name, character })
+                newMovie = {
+                    title: `${e.target.title.value}`,
+                    "duration-in-hours": `${e.target.duration.value}`,
+                    cover: `${e.target.cover.value}`,
+                    cast: castArray
                 }
-            ]
+            }
+            addMovie(newMovie, e.target.genre.value)
+            toolsDiv.replaceChild(formButton, div)
+
+        } else {
+            let newMovie = {
+                title: `${e.target.title.value}`,
+                "duration-in-hours": `${e.target.duration.value}`,
+                cover: `${e.target.cover.value}`,
+                cast: [
+                    {
+                        name: `${e.target["cast-name"]}`,
+                        character: `${e.target["cast-char"]}`
+                    }
+                ]
+            }
+            //defined on line 76
+            addMovie(newMovie, e.target.genre.value)
+            toolsDiv.replaceChild(formButton, div)
+
         }
-        //defined on line 76
-        addMovie(newMovie, submittedForm.genre.value)
-        toolsDiv.replaceChild(formButton, div)
 
 
     })
 
+    //instantiate a counter to keep track of how many times the "additional cast member" button was clicked
+    let inputCounter = 1
     //Beginning of the form refactor. Adds a listener to the button that will add inputs to the form when it is clicked
     div.addEventListener("click", function (e) {
         if (e.target.dataset.id === "add") {
-            console.log("stuff")
+            //add a dataset to the form tag to keep track of how many times the additional cast button was pressed
+            e.target.previousSibling.dataset.iterations = inputCounter
             let div = document.createElement("div")
+            div.dataset.num = inputCounter
+            //add the inputCounter to the two new inputs to keep track of which inputs are associated with each other
             div.innerHTML = `
-            <input type="text" placeholder="cast member name" name="cast-name" />
-        <input type="text" placeholder="cast member character" name="cast-char" />
+            <input type="text" placeholder="cast member name" data-nameNum=${inputCounter}/>
+        <input type="text" placeholder="cast member character" data-charNum=${inputCounter}/>
             `
+            inputCounter++
             form.querySelector("select").insertAdjacentElement("beforebegin", div)
         }
     })
