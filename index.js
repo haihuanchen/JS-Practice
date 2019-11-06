@@ -1,4 +1,8 @@
-
+let movies = {
+    horror: [],
+    comedy: [],
+    action: []
+}
 let movieContainer = document.querySelector("div.movie-container")
 let horrorList = document.getElementById("horror")
 let comedyList = document.getElementById("comedy")
@@ -11,7 +15,8 @@ function fetchMoviesByGenre(genre) {
     fetch(`http://localhost:4000/${genre}`)
         .then(function (resp) { return resp.json() })
         .then(function (data) {
-            data.forEach(function (movie) { appendMovie(movie, getGenreContainer(`${genre}`), genre) })
+            movies[`${genre}`] = data
+            movies[`${genre}`].forEach(function (movie) { appendMovie(movie, getGenreContainer(`${genre}`), genre) })
         })
 }
 
