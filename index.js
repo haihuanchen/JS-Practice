@@ -122,6 +122,8 @@ function createShowPageLi(movie, genre) {
         </div>
         <br/>
     `
+
+    // now that the li is on the DOM I can add a listener to it to render a form when it's clicked
     li.querySelector("button").addEventListener("click", function (e) {
         let button = e.target
         let form = document.createElement("form")
@@ -136,6 +138,7 @@ function createShowPageLi(movie, genre) {
     `
         e.target.parentNode.replaceChild(form, button)
 
+        //now that the form is on the DOM due to the button click I can find it and add a listener for the submission of the form
         form.addEventListener("submit", function (e) {
             e.preventDefault()
             console.log("stuff")
