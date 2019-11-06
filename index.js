@@ -238,7 +238,9 @@ formButton.addEventListener("click", function (e) {
     //now that the form is added to my DOM I can grab it and add an event listener to it
     form.addEventListener("submit", function (e) {
         e.preventDefault()
+        //create an array to hold all the cast members from the form
         let castArray = []
+        //create a variable that will later be set to the movie object created from the form
         let newMovie
         //if the form has an iterations key in it's dataset, add the values from the original inputs into the castArray, then read how many iterations there are, find the inputs associated with each iteration, create cast member objects with each input and push those into the castArray.
         if (e.target.dataset.iterations) {
@@ -258,14 +260,14 @@ formButton.addEventListener("click", function (e) {
             toolsDiv.replaceChild(formButton, div)
 
         } else {
-            let newMovie = {
+            newMovie = {
                 title: `${e.target.title.value}`,
                 "duration-in-hours": `${e.target.duration.value}`,
                 cover: `${e.target.cover.value}`,
                 cast: [
                     {
-                        name: `${e.target["cast-name"]}`,
-                        character: `${e.target["cast-char"]}`
+                        name: e.target["cast-name"].value,
+                        character: e.target["cast-char"].value
                     }
                 ]
             }
